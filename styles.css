@@ -1,142 +1,269 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+/* Estilos Generales */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    background-image: url('background.jpg'); /* Fondo relacionado con perros */
-    background-size: cover;
-    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    color: #fff;
+/* Fondo y color principal */
+body {
+    background-color: #f7f7f7;
+    color: #333;
 }
 
+/* Estilo del encabezado */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    padding: 15px 0;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-header nav ul {
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-header nav ul li a {
-    color: #ffcc00;
+nav ul li a {
     text-decoration: none;
-    font-size: 18px;
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s;
 }
 
-h1, h2, h3 {
-    color: #ffcc00;
+nav ul li a:hover {
+    color: #f39c12;
 }
 
 /* Sección de inicio */
 #inicio {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 60px 0;
+    background-color: #ecf0f1;
+    padding: 50px 20px;
     text-align: center;
 }
 
-#inicio h1 {
-    font-size: 2.5rem;
+#inicio h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 #inicio p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-/* Sección de productos */
-#productos {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px 0;
+#inicio .btn {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.productos-lista {
+#inicio .btn:hover {
+    background-color: #e67e22;
+}
+
+#inicio .imagen-header {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* Sección ¿Por qué elegirnos? */
+#nosotros {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#nosotros h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.razones {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.razon {
+    background-color: #f7f7f7;
+    padding: 20px;
+    width: 30%;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.razon h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.razon p {
+    font-size: 1.1em;
+}
+
+/* Sección de Productos */
+#productos {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .producto {
+    display: inline-block;
     width: 30%;
+    margin: 10px;
     text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.producto img {
+.producto-img {
     width: 100%;
+    max-width: 250px;
     height: auto;
-    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .producto h3 {
-    color: #ffcc00;
-    margin-top: 10px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-.detalle {
-    background-color: #ffcc00;
-    padding: 10px;
+.producto p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.producto .btn {
+    background-color: #f39c12;
+    padding: 10px 20px;
     color: white;
+    font-size: 1.2em;
     text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
+    transition: background-color 0.3s;
 }
 
-.detalle:hover {
-    background-color: #ff9900;
+.producto .btn:hover {
+    background-color: #e67e22;
 }
 
-/* Detalles de productos */
-#detalles-producto1, #detalles-producto2, #detalles-producto3 {
-    background-color: #333;
-    padding: 40px 0;
+/* Sección de Nutrición */
+#nutricion {
+    padding: 50px 20px;
     text-align: center;
+    background-color: #ffffff;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+#nutricion h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
-ul li {
-    margin: 10px 0;
+.tabla-nutricion {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
 }
 
-/* Formulario de contacto */
-form input, form textarea {
+.tabla-nutricion table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.tabla-nutricion th, .tabla-nutricion td {
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-nutricion th {
+    background-color: #f39c12;
+    color: white;
+}
+
+.tabla-nutricion tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+#contacto form {
+    margin: 0 auto;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contacto label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: block;
+}
+
+#contacto input, #contacto textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
 }
 
-form button {
-    background-color: #ffcc00;
-    padding: 10px;
+#contacto button {
+    background-color: #f39c12;
+    padding: 10px 20px;
     color: white;
-    border: none;
+    font-size: 1.2em;
+    text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
-form button:hover {
-    background-color: #ff9900;
+#contacto button:hover {
+    background-color: #e67e22;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
     padding: 20px;
     text-align: center;
