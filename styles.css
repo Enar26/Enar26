@@ -6,10 +6,6 @@ body {
     color: #333;
 }
 
-h1, h2 {
-    font-family: 'Arial', sans-serif;
-}
-
 header {
     background-color: #0066cc;
     color: white;
@@ -43,7 +39,6 @@ nav ul li a:hover {
     color: #ffbf00;
 }
 
-/* Secciones principales */
 section {
     padding: 40px;
     margin: 20px 10%;
@@ -64,7 +59,6 @@ section p {
     color: #555;
 }
 
-/* Estilos de los productos */
 #productos .producto {
     background-color: #f9f9f9;
     padding: 20px;
@@ -82,59 +76,17 @@ section p {
     margin-bottom: 15px;
 }
 
-#productos .producto p {
-    color: #666;
-}
-
 #productos .producto:hover {
     transform: scale(1.05);
 }
 
-/* Estilos de los artículos */
-#articulos .articulo {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#articulos .articulo h3 {
-    font-size: 1.5em;
-    color: #0066cc;
-    margin-bottom: 10px;
-}
-
-#articulos .articulo p {
-    color: #555;
-}
-
-/* Pie de Página */
 footer {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 1.1em;
 }
 
 footer p {
     margin: 0;
-}
-
-/* Responsividad */
-@media screen and (max-width: 768px) {
-    #productos .producto {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    section {
-        margin: 20px;
-    }
 }
