@@ -1,270 +1,106 @@
-/* Estilos Generales */
-* {
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Fondo y color principal */
-body {
     background-color: #f7f7f7;
-    color: #333;
 }
 
-/* Estilo del encabezado */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ffcc00;
+    padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
+header nav ul li a {
     color: #fff;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #f39c12;
-}
-
-/* Sección de inicio */
-#inicio {
-    background-color: #ecf0f1;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#inicio h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#inicio p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-#inicio .btn {
-    background-color: #f39c12;
-    padding: 10px 20px;
-    color: white;
-    font-size: 1.2em;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-size: 18px;
 }
 
-#inicio .btn:hover {
-    background-color: #e67e22;
+h1, h2, h3 {
+    color: #333;
 }
 
-#inicio .imagen-header {
-    max-width: 100%;
-    height: auto;
-    margin-top: 30px;
-}
-
-/* Sección ¿Por qué elegirnos? */
-#nosotros {
-    background-color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#nosotros h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
-.razones {
+/* Sección de productos */
+.productos-lista {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.razon {
-    background-color: #f7f7f7;
-    padding: 20px;
-    width: 30%;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.razon h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.razon p {
-    font-size: 1.1em;
-}
-
-/* Sección de Productos */
-#productos {
-    padding: 50px 20px;
-    background-color: #f7f7f7;
-    text-align: center;
-}
-
-#productos h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+    justify-content: space-between;
 }
 
 .producto {
-    display: inline-block;
     width: 30%;
-    margin: 10px;
     text-align: center;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.producto-img {
+.producto img {
     width: 100%;
-    max-width: 250px;
     height: auto;
-    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .producto h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    color: #ffcc00;
+    margin-top: 10px;
 }
 
-.producto p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-.producto .btn {
-    background-color: #f39c12;
-    padding: 10px 20px;
+.detalle {
+    background-color: #ffcc00;
+    padding: 10px;
     color: white;
-    font-size: 1.2em;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
-.producto .btn:hover {
-    background-color: #e67e22;
+.detalle:hover {
+    background-color: #ff9900;
 }
 
-/* Sección de Nutrición */
-#nutricion {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #ffffff;
+/* Estilos del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-#nutricion h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
-.tabla-nutricion {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-.tabla-nutricion table {
-    width: 100%;
-    border: 1px solid #ddd;
-}
-
-.tabla-nutricion th, .tabla-nutricion td {
-    padding: 12px;
-    text-align: left;
-}
-
-.tabla-nutricion th {
-    background-color: #f39c12;
-    color: white;
-}
-
-.tabla-nutricion tr:nth-child(even) {
-    background-color: #f7f7f7;
-}
-
-/* Sección de Contacto */
-#contacto {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #ecf0f1;
-}
-
-#contacto form {
-    margin: 0 auto;
-    width: 50%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#contacto label {
-    font-size: 1.2em;
-    margin-top: 10px;
-    display: block;
-}
-
-#contacto input, #contacto textarea {
-    width: 100%;
+form input, form textarea {
     padding: 10px;
-    margin-top: 5px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1em;
 }
 
-#contacto button {
-    background-color: #f39c12;
-    padding: 10px 20px;
+form button {
+    background-color: #ffcc00;
+    padding: 10px;
     color: white;
-    font-size: 1.2em;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
 }
 
-#contacto button:hover {
-    background-color: #e67e22;
+form button:hover {
+    background-color: #ff9900;
 }
 
-/* Footer */
 footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
+
