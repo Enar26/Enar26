@@ -3,17 +3,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #f4f4f4;
+    background-image: url('background.jpg'); /* Fondo relacionado con perros */
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
+    color: #fff;
 }
 
 header {
-    background-color: #ffcc00;
-    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -28,16 +32,36 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #ffcc00;
     text-decoration: none;
     font-size: 18px;
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #ffcc00;
+}
+
+/* Sección de inicio */
+#inicio {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px 0;
+    text-align: center;
+}
+
+#inicio h1 {
+    font-size: 2.5rem;
+}
+
+#inicio p {
+    font-size: 1.2rem;
 }
 
 /* Sección de productos */
+#productos {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
+}
+
 .productos-lista {
     display: flex;
     justify-content: space-between;
@@ -65,19 +89,32 @@ h1, h2, h3 {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
 }
 
 .detalle:hover {
     background-color: #ff9900;
 }
 
-/* Estilos del formulario de contacto */
-form {
-    display: flex;
-    flex-direction: column;
+/* Detalles de productos */
+#detalles-producto1, #detalles-producto2, #detalles-producto3 {
+    background-color: #333;
+    padding: 40px 0;
+    text-align: center;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Formulario de contacto */
 form input, form textarea {
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -97,9 +134,10 @@ form button:hover {
     background-color: #ff9900;
 }
 
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
     color: white;
+    padding: 20px;
+    text-align: center;
 }
