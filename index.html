@@ -8,10 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a Croquetas Saludables</h1>
+        <div class="logo">
+            <h1>Croquetas Saludables</h1>
+            <p>Alimenta a tu perro con lo mejor de la naturaleza</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">¿Por qué Ricocan?</a></li>
                 <li><a href="#productos">Nuestros Productos</a></li>
                 <li><a href="#nutricion">Nutrición Completa</a></li>
                 <li><a href="#articulos">Artículos</a></li>
@@ -20,44 +24,119 @@
         </nav>
     </header>
 
+    <!-- Sección de inicio -->
     <section id="inicio">
-        <h2>Bienvenidos a la mejor opción para la alimentación de tu perro</h2>
-        <p>En Croquetas Saludables nos dedicamos a ofrecer productos que cuidan la salud de tu mascota, con ingredientes naturales y deliciosos.</p>
+        <div class="contenido-inicio">
+            <h2>Bienvenidos a la mejor opción para la alimentación de tu perro</h2>
+            <p>En Croquetas Saludables nos dedicamos a ofrecer productos que cuidan la salud de tu mascota, con ingredientes naturales y deliciosos.</p>
+            <a href="#productos" class="btn">Ver productos</a>
+        </div>
         <img src="images/perro-header.jpg" alt="Perro feliz comiendo croquetas" class="imagen-header">
     </section>
 
+    <!-- Sección ¿Por qué elegirnos? -->
+    <section id="nosotros">
+        <h2>¿Por qué Croquetas Saludables?</h2>
+        <p>En nuestra empresa, nos aseguramos de que cada croqueta esté hecha con ingredientes de calidad que beneficien la salud de tu perro. Nos apasiona ofrecer lo mejor para tu mascota.</p>
+        <div class="razones">
+            <div class="razon">
+                <h3>Ingredientes Naturales</h3>
+                <p>Usamos ingredientes frescos y naturales para garantizar una nutrición completa.</p>
+            </div>
+            <div class="razon">
+                <h3>Calidad Garantizada</h3>
+                <p>Controlamos todos nuestros procesos para asegurar la mejor calidad en nuestros productos.</p>
+            </div>
+            <div class="razon">
+                <h3>Beneficios para la Salud</h3>
+                <p>Promovemos una vida saludable para tu perro con alimentos que cuidan su digestión y bienestar general.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
     <section id="productos">
         <h2>Nuestros Productos</h2>
         <div class="producto">
             <img src="images/croquetas-pollo.jpg" alt="Croquetas de Pollo" class="producto-img">
             <h3>Croquetas de Pollo</h3>
             <p>Con proteínas de alta calidad, perfectas para perros activos.</p>
+            <a href="#comprar" class="btn">Comprar ahora</a>
         </div>
         <div class="producto">
             <img src="images/croquetas-vegetales.jpg" alt="Croquetas de Vegetales" class="producto-img">
             <h3>Croquetas de Vegetales</h3>
             <p>Para una dieta equilibrada, llenas de nutrientes naturales.</p>
+            <a href="#comprar" class="btn">Comprar ahora</a>
         </div>
         <div class="producto">
             <img src="images/croquetas-hipoalergenicas.jpg" alt="Croquetas Hipoalergénicas" class="producto-img">
             <h3>Croquetas Hipoalergénicas</h3>
             <p>Ideal para perros con sensibilidad alimentaria o alergias.</p>
+            <a href="#comprar" class="btn">Comprar ahora</a>
         </div>
     </section>
 
+    <!-- Sección de Nutrición -->
     <section id="nutricion">
         <h2>Nutrición Completa</h2>
-        <p>Todos nuestros productos están diseñados para proporcionar una nutrición completa y balanceada, favoreciendo la salud digestiva y el bienestar de tu perro.</p>
+        <p>Nuestros productos están diseñados para ofrecer una dieta equilibrada, cubriendo todas las necesidades nutricionales de tu perro. ¡Una nutrición completa para una vida más saludable!</p>
+        <div class="tabla-nutricion">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Beneficio</th>
+                        <th>Ingredientes</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fortalece el sistema inmunológico</td>
+                        <td>Vitamina C, Zinc</td>
+                        <td>Mayor defensa ante enfermedades</td>
+                    </tr>
+                    <tr>
+                        <td>Mejora la digestión</td>
+                        <td>Fibra natural, prebioticos</td>
+                        <td>Mejor absorción de nutrientes</td>
+                    </tr>
+                    <tr>
+                        <td>Promueve la salud del pelaje</td>
+                        <td>Omega 3 y Omega 6</td>
+                        <td>Pelaje brillante y suave</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
+    <!-- Sección de artículos para perros -->
     <section id="articulos">
         <h2>Artículos para tu perro</h2>
-        <p>Además de nuestras croquetas, también ofrecemos artículos relacionados con el cuidado de tu mascota, como camas, juguetes y más.</p>
+        <p>También ofrecemos una variedad de artículos para mejorar la calidad de vida de tu perro, como camas, juguetes, y accesorios. ¡Todo lo que tu perro necesita en un solo lugar!</p>
+        <a href="#comprar" class="btn">Ver más artículos</a>
     </section>
 
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o deseas más información, no dudes en ponerte en contacto con nosotros.</p>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Croquetas Saludables | Todos los derechos reservados</p>
-        <p>Contacto: contacto@croquetassaludables.com</p>
+        <p>Contacto: <a href="mailto:contacto@croquetassaludables.com">contacto@croquetassaludables.com</a></p>
     </footer>
 </body>
 </html>
